@@ -1,0 +1,23 @@
+<div class="user-search">
+	<div class="users-container">
+		<div class="users-search-container">
+			<form class="form-horizontal" role="form" name="form">
+				<fieldset ng-disabled="searching">
+					<div class="form-groupx">
+						<input type="text" class="form-control" placeholder="Search" ng-model="search" ng-model-options="{debounce:300}">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<div class="users-list">
+			<div class="user-set" ng-repeat="user in users | filter:search">
+				<ex-user user="user"></ex-user>
+ 			</div>
+		</div>
+	</div>
+
+	<div class="button-container clearfix">
+		<button class="btn-add-user pull-right"> + </button>
+	</div>
+</div>

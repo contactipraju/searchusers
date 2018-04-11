@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="src/styles/lib/bootstrap.css">
+    <link rel="stylesheet" href="src/styles/lib/bootstrap-theme.css">
+
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/users.css">
+  </head>
+
+  <body ng-app="searchUsersApp">
+
+    <div class="main-container" ng-controller="MainCtrl">
+
+      <div class="header clearfix">
+        <div class="header-left pull-left">
+          <div class="header-left-title">Product Name</div>
+        </div>
+
+        <div class="header-right pull-right">
+          <div>A</div>
+        </div>
+      </div>
+
+      <div class="content row clearfix">
+        <div class="lhs col-xs-3 pull-left">
+          <div class="lhs-header">
+            <div class="lhs-title">
+              Users
+            </div>
+          </div>
+
+          <div class="lhs-body">
+            <ul>
+              <li ng-repeat="userFilter in userFilters" ng-click="$event.stopPropagation()" ng-class="{'active': currentFilter.field == userFilter.field}">
+                <a href ng-click="onFilterChange($event, userFilter)">
+                  <img ng-src="{{::userFilter.icon}}"></img>&nbsp;{{::userFilter.label}}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rhs col-xs-9 pull-left">
+          <div class="rhs-header">
+            <div class="title clearfix">
+              <div class="pull-left">All Users</div>
+              <div class="action-bar pull-right">A B C D</div>
+            </div>
+          </div>
+
+          <div class="rhs-body" ng-view=""></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="src/lib/moment/moment.js"></script>
+    <script src="src/lib/jquery/jquery.js"></script>
+    <script src="src/lib/bootstrap/bootstrap.js"></script>
+
+    <script src="src/lib/angular/angular.js"></script>
+    <script src="src/lib/angular/angular-route.js"></script>
+    <script src="src/lib/angular/angular-touch.js"></script>
+    <script src="src/lib/angular/angular-animate.js"></script>
+    <script src="src/lib/angular/angular-cookies.js"></script>
+    <script src="src/lib/angular/angular-resource.js"></script>
+    <script src="src/lib/angular/angular-sanitize.js"></script>
+
+    <script src="src/js/app.js"></script>
+    <script src="src/js/routes.js"></script>
+
+    <script src="src/js/filters/filters.js"></script>
+
+    <script src="src/js/services/users.service.js"></script>
+
+    <script src="src/js/directives/user.directive.js"></script>
+
+    <script src="src/js/controllers/main.controller.js"></script>
+    <script src="src/js/controllers/users.controller.js"></script>
+</body>
+</html>

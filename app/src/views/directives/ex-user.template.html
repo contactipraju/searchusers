@@ -1,0 +1,26 @@
+<div class="row user">
+	<div class="col-xs-1 field user-profile">
+		<img ng-src='{{user.profile}}'/>
+	</div>
+
+	<div class="col-xs-6 field user-details">
+		<div class="user-details-name">
+			{{ user | displayFullname }}
+		</div>
+		<div class="user-details-email">
+			{{ user.email }}
+		</div>
+	</div>
+
+	<div class="col-xs-2 field user-date">
+		{{ user.dob | momentDate }}
+	</div>
+
+	<div class="col-xs-2 field user-login-info">
+		{{ user.lastloggedin | momentDate:true }}
+	</div>
+
+	<div class="col-xs-1 field user-options">
+		<img src='src/images/icons/ico-context-menu.jpeg'/>
+	</div>
+</div>

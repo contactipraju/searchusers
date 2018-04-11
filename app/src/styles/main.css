@@ -1,0 +1,56 @@
+html body .main-container .header {
+  height: 40px;
+  padding: 10px;
+  color: white;
+  background-color: #0076c2;
+}
+html body .main-container .content {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+html body .main-container .content .lhs {
+  padding: 0px;
+}
+html body .main-container .content .lhs .lhs-header {
+  height: 40px;
+  padding: 10px;
+  background-color: #eee;
+}
+html body .main-container .content .lhs .lhs-body {
+  padding-top: 3px;
+}
+html body .main-container .content .lhs .lhs-body ul {
+  color: grey;
+  padding-left: 0px;
+  list-style-type: none;
+}
+html body .main-container .content .lhs .lhs-body ul li {
+  padding: 7px;
+  font-size: 12px;
+}
+html body .main-container .content .lhs .lhs-body ul li img {
+  margin-right: 5px;
+}
+html body .main-container .content .lhs .lhs-body ul li a {
+  color: grey;
+}
+html body .main-container .content .lhs .lhs-body ul li.active {
+  background-color: #eee;
+}
+html body .main-container .content .rhs {
+  padding: 0px;
+}
+html body .main-container .content .rhs .rhs-header {
+  height: 40px;
+  padding: 10px;
+  background-color: #eee;
+  border-left: 1px solid lightgrey;
+}
+html body .main-container .content .rhs .rhs-body {
+  padding: 10px;
+  background-color: lightgrey;
+}
+img.img-icon {
+  width: 20px;
+  height: 20px;
+}
