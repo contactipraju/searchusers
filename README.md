@@ -1,6 +1,4 @@
 # searchusers
-README.md
-
 
 Technology stack:
 	Workflow and Build Tools:
@@ -17,23 +15,6 @@ Technology stack:
 		bootstrap (Responsiveness)
 		other: jQuery, moment.js etc
  
-
-Highly-level folder structure:
-
-	src
-		images
-		js
-			controllers
-			directives
-			filters
-			services
-		lib
-		styles
-			lib
-		views
-			controllers
-			directives
-
 	Further improvements:
 		extend MainCtrl for additional filtering (flags are already present in json)
 		use Less variables, mixins and avoid redundant values in .less files
