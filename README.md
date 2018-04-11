@@ -1,15 +1,14 @@
 # searchusers
 
-Technology stack:
 	Workflow and Build Tools:
-		Package Manager: npm
-		Depenency Manager: Bower
-		Frontend Task Runner: Grunt (+ additional plugins)
-		Scaffolding tool: Yeoman (used sparingly)
-		Linting tool: JSHint
-		CSS Preprocessor: less
-
-	JS Frameworks:
+        Package Manager: npm
+        Dependency Manager: Bower
+        Frontend Task Runner: Grunt (+ additional plugins)
+        Scaffloding tool: Yeoman (used sparingly)
+        Linting tool: JSHint
+        CSS Preprocessor: less
+        
+    JS Frameworks:
 		angular 1.6.9 (Primary)
 		ngRoute (routing)
 		bootstrap (Responsiveness)
