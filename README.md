@@ -1,5 +1,29 @@
 # searchusers
 
+    Purpose:
+        Showcase Understanding of HTML, CSS, JavaScript
+        Showcase Code-structure and organisation, Simplicity and Readability
+        Attention to details
+
+    Exercise:
+        Create a user list JSON data object
+        Take the user input from the search form and perform a search on the user list
+        Display the valid search results in the results section
+        Apply filters on the user list
+        
+    Technology:
+        Use Angular 1.x or similar Modern JS Framework
+        In case of Angular, use the following features:
+            Router
+            A Controller
+            A Directive
+            A Service
+            A Filter
+            Using an external library (eg: moment.js or similar)
+            A proper build system
+            
+    Solution:
+
     Workflow and Build Tools:
         Package Manager: npm
         Dependency Manager: Bower
