@@ -45,3 +45,6 @@
         make the concatination, minification and obfuscation work
         write unit-tests for the services, filters (karma/jasmine etc)
         Host on github/jsfiddle
+        
+    Demo:
+        https://contactipraju.github.io/searchusers/app/index.html#!/
